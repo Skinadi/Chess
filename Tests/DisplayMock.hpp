@@ -2,6 +2,7 @@
 #include <gmock/gmock.h>
 #include "iDisplay.hpp"
 #include <string>
+#include <vector>
 
 class DisplayMock : public iDisplay
 {
@@ -9,6 +10,6 @@ class DisplayMock : public iDisplay
 public:
     DisplayMock();
     ~DisplayMock();
-    MOCK_METHOD(void,display,(std::vector <std::vector <char>> board),(override));
+    MOCK_METHOD(void,display,(Board board),(override));
 };
 

@@ -1,11 +1,12 @@
+#pragma once
+#include "Square.hpp"
 #include <vector>
-#include "iPiece.hpp"
 class Board
 {
 private:
-    std::vector <std::vector<char>> board;
+    std::vector <std::vector<Square>> board;
 public:
-    std::vector <std::vector<char>> getBoard();
+    std::vector <std::vector<Square>> getBoard();
     void init();
     Board(/* args */);
     ~Board()=default;

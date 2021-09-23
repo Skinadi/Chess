@@ -31,7 +31,7 @@ TEST_F(DisplayTest,EmptyBoardConsoleCheck)
     s+=" 12345678\n";
     Board board;
     ConsoleDisplay display;
-    EXPECT_EQ(s,display.getDisplayString(board.getBoard()));
+    EXPECT_EQ(s,display.getDisplayString(board));
 }
 TEST_F(DisplayTest,InitBoard)
 {
@@ -48,5 +48,5 @@ TEST_F(DisplayTest,InitBoard)
     Board board;
     ConsoleDisplay display;
     board.init();
-    EXPECT_EQ(s,display.getDisplayString(board.getBoard()));
+    EXPECT_EQ(s,display.getDisplayString(board));
 }

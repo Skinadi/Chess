@@ -3,21 +3,21 @@ Board::Board()
 {   
     for(int i = 0; i<8;i++)
     {
-        board.push_back(std::move(*new std::vector<char>));
+        board.push_back(std::move(*new std::vector<Square>));
         for(int j = 0; j<8; j++)
         {
-            board[i].push_back('E');
+            board[i].push_back(Square());
         }
     }
         
 }
-std::vector<std::vector <char>> Board::getBoard()
+std::vector<std::vector <Square>> Board::getBoard()
 {
     return board;
 }
 void Board::init()
 {
-    board[1][0]='P';
+    /*board[1][0]='P';
     board[1][1]='P';
     board[1][2]='P';
     board[1][3]='P';
@@ -48,5 +48,5 @@ void Board::init()
     board[7][4]='K';
     board[7][5]='B';
     board[7][6]='J';
-    board[7][7]='R';
+    board[7][7]='R';*/
 }

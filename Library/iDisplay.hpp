@@ -1,10 +1,11 @@
 #pragma once
+#include "Board.hpp"
 class iDisplay
 {
 private:
     /* data */
 public:
-    virtual void display(std::vector <std::vector <char>> board) = 0;
+    virtual void display(Board board) = 0;
 
 };
 

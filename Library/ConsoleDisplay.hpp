@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <iostream>
 #include <vector>
@@ -8,8 +9,8 @@ class ConsoleDisplay : public iDisplay
 private:
     /* data */
 public:
-    void display(std::vector <std::vector <char>> board) override;
-    std::string getDisplayString(std::vector <std::vector <char>> board);
+    void display(Board board) override;
+    std::string getDisplayString(Board board);
     ConsoleDisplay(/* args */) = default;
     ~ConsoleDisplay() = default;
 };
