@@ -8,7 +8,32 @@ std::string ConsoleDisplay::getDisplayString(Board board)
         s+=" ";
         for(int j = 0;j<board.getBoard()[i].size();j++)
         {
-            s+= board.getBoard()[i][j].getoccupied();
+            switch (board.getBoard()[i][j].getSquareId())
+            {
+            case EMPTY:
+                s+='E';
+                break;
+            case KNIGHT:
+                s+='J';
+                break;
+            case KING:
+                s+='K';
+                break;
+            case ROOK:
+                s+='R';
+                break;
+            case BISHOP:
+                s+='B';
+                break;
+            case QUEEN:
+                s+='Q';
+                break;
+            case PAWN:
+                s+='P';
+                break;
+            default:
+                break;
+            }
         }
         s+="\n";
     }
@@ -23,7 +48,32 @@ void ConsoleDisplay::display(Board board)
         std::cout << i+1 << " ";
         for(int j = 0;j<=board.getBoard()[i].size();j++)
         {
-            std::cout << board.getBoard()[i][j].getoccupied();
+            switch (board.getBoard()[i][j].getSquareId())
+            {
+            case EMPTY:
+                std::cout << 'E';
+                break;
+            case KNIGHT:
+                std::cout << 'J';
+                break;
+            case KING:
+                std::cout << 'K';
+                break;
+            case ROOK:
+                std::cout << 'R';
+                break;
+            case BISHOP:
+                std::cout << 'B';
+                break;
+            case QUEEN:
+                std::cout << 'Q';
+                break;
+            case PAWN:
+                std::cout << 'P';
+                break;
+            default:
+                break;
+            }
         }
         std::cout << std::endl;
     }

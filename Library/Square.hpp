@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 #include "iPiece.hpp"
-
+#include "PiecesEnum.hpp"
 class Square
 {
 private:
@@ -12,6 +12,9 @@ public:
     Square(/* args */);
     ~Square();
     bool getoccupied();
+    void setPiece(iPiece * piece);
+    iPiece * getPiece();
+    SQUARES getSquareId();
 };
 
 
