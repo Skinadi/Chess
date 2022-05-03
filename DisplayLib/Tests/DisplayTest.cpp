@@ -2,14 +2,12 @@
 #include <gmock/gmock.h>
 #include <string>
 #include <iostream>
-#include "DisplayMock.hpp"
 #include "ConsoleDisplay.hpp"
 #include "Board.hpp"
 using namespace testing;
 
 struct DisplayTest : public Test
 {
-    StrictMock <DisplayMock> displayMock;
     DisplayTest()
     {};
 };

@@ -1,5 +1,6 @@
 #pragma once
 #include "Board.hpp"
+// class Board;
 class iDisplay
 {
 private:
