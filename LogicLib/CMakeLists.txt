@@ -4,6 +4,8 @@ project(LogicLib)
 
 cmake_minimum_required(VERSION 2.8)
 
+add_subdirectory(Tests)
+
 aux_source_directory(. SRC_LIST)
 aux_source_directory(./Pieces SRC_LIST1)
 
