@@ -26,7 +26,7 @@ TEST_F(DisplayTest,EmptyBoardConsoleCheck)
     s+="6 EEEEEEEE\n";
     s+="7 EEEEEEEE\n";
     s+="8 EEEEEEEE\n";
-    s+=" 12345678\n";
+    s+="  12345678\n";
     Board board;
     ConsoleDisplay display;
     EXPECT_EQ(s,display.getDisplayString(board));
@@ -42,7 +42,7 @@ TEST_F(DisplayTest,InitBoard)
     s+="6 EEEEEEEE\n";
     s+="7 PPPPPPPP\n";
     s+="8 RJBQKBJR\n";
-    s+=" 12345678\n";
+    s+="  12345678\n";
     Board board;
     ConsoleDisplay display;
     board.init();

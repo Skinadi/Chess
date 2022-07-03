@@ -37,7 +37,7 @@ std::string ConsoleDisplay::getDisplayString(Board board)
         }
         s+="\n";
     }
-    s+=" 12345678\n";
+    s+="  12345678\n";
     return s;
 }
 void ConsoleDisplay::display(Board board)
@@ -77,6 +77,6 @@ void ConsoleDisplay::display(Board board)
         }
         std::cout << std::endl;
     }
-    std::cout << " 12345678" << std::endl;
+    std::cout << "  12345678" << std::endl;
     
 }
